@@ -1,0 +1,140 @@
+/* Importando a fonte Poppins do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Resetando margem, padding e definindo fonte padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Inclui bordas e paddings no tamanho total dos elementos */
+  font-family: "Poppins", sans-serif;
+}
+
+/* Estilo do body (centralização e fundo) */
+body {
+  display: flex; /* Ativa o flexbox */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  min-height: 100vh; /* Ocupa toda a altura da tela */
+
+  /* Fundo com imagem */
+  background-image: url(./img/4k-minimal-wallpaper-37u7db7l3oxv9afc.jpg);
+  background-size: cover; /* Faz a imagem cobrir toda a tela */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita repetição */
+}
+
+/* Container principal do login */
+.container {
+  width: 400px;
+  background: rgba(255,255,255,0.05); /* Fundo transparente (vidro fosco) */
+  border-radius: 10px; /* Bordas arredondadas */
+  color: #fff; /* Texto branco */
+  padding: 30px 40px;
+  box-shadow: 0 0 10px rgba(0,0,0,.2); /* Sombra */
+  backdrop-filter: blur(15px); /* Efeito de vidro */
+}
+
+/* Título do formulário */
+.container h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+/* Caixa que envolve input + ícones */
+.input-box {
+  position: relative; /* Necessário para posicionar ícones dentro */
+  margin-bottom: 20px;
+}
+
+/* Estilo do campo de input */
+.input-box input {
+  width: 100%;
+  padding: 15px 50px 15px 45px; /* Espaço para ícones à esquerda e direita */
+  border-radius: 40px;
+  border: 2px solid rgba(255,255,255,.2);
+  background: transparent;
+  color: #fff;
+  font-size: 16px;
+  outline: none; /* Remove a borda azul ao clicar */
+}
+
+/* Cor do texto placeholder */
+.input-box input::placeholder {
+  color: #fff;
+}
+
+/* Estilo base para os ícones dentro do input */
+.input-box i {
+  position: absolute; /* Fixa dentro do input */
+  top: 50%; /* Centraliza verticalmente */
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+/* Primeiro ícone (usuário/cadeado) fica à esquerda */
+.input-box i:first-of-type {
+  left: 15px;
+}
+
+/* Ícone de mostrar/ocultar senha fica à direita */
+.input-box i#toggleSenha {
+  right: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Seção "lembrar-me / esqueci a senha" */
+.remeber-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.remeber-forgot a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.remeber-forgot a:hover {
+  text-decoration: underline;
+}
+
+/* Botão de login */
+.login {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 40px;
+  background: #fff;
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Efeito hover no botão */
+.login:hover {
+  background: transparent;
+  color: #fff;
+  border: 2px solid rgba(255,255,255,.5);
+}
+
+/* Texto "não tem conta? cadastre-se" */
+.register-link {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.register-link a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
